@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adopt Me Valores | Sobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+  </head>
+  <body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col">
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur">
+      <div class="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-5">
+        <a href="index.html" class="flex items-center gap-3 text-xl font-semibold text-purple-300 sm:text-2xl">
+          <span class="text-2xl">🐾</span>
+          <span>Adopt Me Valores</span>
+        </a>
+        <nav class="flex flex-wrap items-center gap-4 text-sm sm:text-base">
+          <a href="index.html" class="rounded-full px-3 py-2 hover:bg-slate-800/70 hover:text-pink-400">Lista</a>
+          <a href="calculadora.html" class="rounded-full px-3 py-2 hover:bg-slate-800/70 hover:text-pink-400">Calculadora</a>
+          <a href="sobre.html" class="rounded-full px-3 py-2 hover:bg-slate-800/70 hover:text-pink-400">Sobre</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <section class="border-b border-slate-800 bg-gradient-to-br from-purple-900/20 via-slate-900 to-slate-900">
+        <div class="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-16">
+          <h1 class="text-4xl font-bold text-white sm:text-5xl">📖 Sobre o Adopt Me Valores</h1>
+        </div>
+      </section>
+
+      <section class="mx-auto w-full max-w-3xl px-4 py-16">
+        <article class="prose prose-invert max-w-none space-y-6">
+          <h2>O que é este site?</h2>
+          <p>
+            Adopt Me Valores é uma ferramenta gratuita criada pela comunidade para ajudar jogadores de Adopt Me a conhecer os valores de mercado dos seus pets e fazer trocas justas.
+          </p>
+
+          <h2>Como funcionam os valores?</h2>
+          <p>Os valores apresentados são baseados em:</p>
+          <ul>
+            <li>Tendências de mercado da comunidade</li>
+            <li>Raridade e demanda dos pets</li>
+            <li>Observação de trocas reais entre jogadores</li>
+          </ul>
+
+          <aside class="warning-box">
+            <p><strong>Importante:</strong> Estes valores são apenas referências. O valor real pode variar dependendo de fatores como:</p>
+            <ul>
+              <li>Condições do pet (Normal/Neon/Mega)</li>
+              <li>Preferências pessoais</li>
+              <li>Flutuações de mercado</li>
+            </ul>
+          </aside>
+
+          <h2>Aviso Legal</h2>
+          <p>⚠️ Este site NÃO é afiliado com a Uplift Games ou Roblox Corporation.</p>
+          <p>⚠️ Todos os valores são estimativas baseadas na comunidade.</p>
+          <p>⚠️ Use estas informações apenas como referência.</p>
+
+          <h2>Atualização dos Dados</h2>
+          <p>
+            Atualizamos os valores semanalmente para refletir as mudanças do mercado.<br />
+            Última atualização: <span id="last-updated">--</span>
+          </p>
+
+          <h2>Contato</h2>
+          <p>📧 Email: <a href="mailto:contato@adoptmevalores.com">contato@adoptmevalores.com</a></p>
+          <p>💬 Discord: <span class="text-slate-400">Em breve</span></p>
+
+          <h2>Créditos</h2>
+          <p>Dados coletados da comunidade Adopt Me</p>
+          <p>Inspirado por Cosmic Values</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-900/90">
+      <div class="mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-8 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+        <span>© 2025 Adopt Me Valores. Todos os direitos reservados.</span>
+        <span>Dados baseados na comunidade - Não oficial.</span>
+      </div>
+    </footer>
+
+    <script type="module">
+      import { loadPets } from './assets/js/data-loader.js';
+
+      function formatarData(valor) {
+        if (!valor) {
+          return '--';
+        }
+        const data = new Date(valor);
+        if (Number.isNaN(data.getTime())) {
+          return valor;
+        }
+        return data.toLocaleString('pt-BR', {
+          dateStyle: 'long',
+          timeStyle: 'short',
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', async () => {
+        const elemento = document.getElementById('last-updated');
+        if (!elemento) return;
+
+        try {
+          const dataset = await loadPets();
+          elemento.textContent = formatarData(dataset.lastUpdated);
+        } catch (error) {
+          console.error('Não foi possível carregar a data de atualização:', error);
+          elemento.textContent = '--';
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adopt Me Valores | Lista de Pets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+  </head>
+  <body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col">
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur">
+      <div class="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-5">
+        <a href="index.html" class="flex items-center gap-3 text-xl font-semibold text-purple-300 sm:text-2xl">
+          <span class="text-2xl">🐾</span>
+          <span>Adopt Me Valores</span>
+        </a>
+        <nav class="flex flex-wrap items-center gap-4 text-sm sm:text-base">
+          <a href="#lista" class="rounded-full px-3 py-2 hover:bg-slate-800/70 hover:text-pink-400">Lista</a>
+          <a href="calculadora.html" class="rounded-full px-3 py-2 hover:bg-slate-800/70 hover:text-pink-400">Calculadora</a>
+          <a href="sobre.html" class="rounded-full px-3 py-2 hover:bg-slate-800/70 hover:text-pink-400">Sobre</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <section class="border-b border-slate-800 bg-gradient-to-br from-purple-900/30 via-slate-900 to-slate-900">
+        <div class="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-16">
+          <div class="space-y-4">
+            <h1 class="text-4xl font-bold text-white sm:text-5xl">Lista de Valores de Pets</h1>
+            <p class="text-lg text-slate-300">Todos os pets do Adopt Me com valores atualizados.</p>
+            <p class="text-sm text-slate-400">
+              Última atualização:
+              <span id="last-updated" class="font-medium text-purple-300">--</span>
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-6" id="lista">
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4" id="metric-cards">
+              <article class="metric-card">
+                <p class="metric-label">Pets cadastrados</p>
+                <p class="metric-value" data-metric="total-pets">--</p>
+              </article>
+              <article class="metric-card">
+                <p class="metric-label">% lendários</p>
+                <p class="metric-value" data-metric="legendary-rate">--</p>
+              </article>
+              <article class="metric-card">
+                <p class="metric-label">Limitados x Permanentes</p>
+                <p class="metric-value" data-metric="status-ratio">--</p>
+              </article>
+              <article class="metric-card">
+                <p class="metric-label">Última revisão</p>
+                <p class="metric-value" data-metric="last-review">--</p>
+              </article>
+            </div>
+
+            <div class="relative max-w-xl">
+              <input
+                id="search-input"
+                type="search"
+                placeholder="🔍 Buscar pet (ex: Shadow Dragon, Girafa...)"
+                class="w-full rounded-2xl border border-slate-800 bg-slate-800/80 px-5 py-4 text-base text-slate-100 placeholder:text-slate-500 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-600/50"
+                autocomplete="off"
+                spellcheck="false"
+              />
+              <button
+                id="reset-search"
+                class="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-pink-400 hover:text-pink-300"
+                type="button"
+              >
+                limpar
+              </button>
+            </div>
+
+            <div class="flex flex-col gap-5 rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-lg">
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-wrap gap-3" id="rarity-filters" aria-label="Filtrar por raridade">
+                  <button type="button" data-rarity="legendary" class="filter-chip">Lendário</button>
+                  <button type="button" data-rarity="ultra-rare" class="filter-chip">Ultra Raro</button>
+                  <button type="button" data-rarity="rare" class="filter-chip">Raro</button>
+                  <button type="button" data-rarity="uncommon" class="filter-chip">Incomum</button>
+                  <button type="button" data-rarity="common" class="filter-chip">Comum</button>
+                </div>
+                <div class="flex flex-wrap gap-3" id="demand-filters" aria-label="Filtrar por demanda">
+                  <button type="button" data-demand="high" class="filter-chip filter-chip--outline">Demanda Alta</button>
+                  <button type="button" data-demand="medium" class="filter-chip filter-chip--outline">Demanda Média</button>
+                  <button type="button" data-demand="low" class="filter-chip filter-chip--outline">Demanda Baixa</button>
+                </div>
+                <div class="flex w-full flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <div class="flex flex-wrap gap-3" id="status-filters" aria-label="Disponibilidade">
+                    <button type="button" data-status="limitado" class="filter-chip filter-chip--outline">Limitado</button>
+                    <button type="button" data-status="permanente" class="filter-chip filter-chip--outline">Permanente</button>
+                  </div>
+                  <div class="relative w-full max-w-xs">
+                    <label for="sort-select" class="sr-only">Ordenar</label>
+                    <select
+                      id="sort-select"
+                      class="w-full appearance-none rounded-2xl border border-slate-800 bg-slate-800/80 px-4 py-3 text-sm text-slate-200 focus:border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-600/40"
+                    >
+                      <option value="value-desc">Valor: alto → baixo</option>
+                      <option value="value-asc">Valor: baixo → alto</option>
+                      <option value="name-asc">Nome: A → Z</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-slate-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9L12 12.75 15.75 9" />
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-2 rounded-full border border-purple-500/30 bg-slate-800/70 px-4 py-2 text-sm text-slate-300">
+                    Resultados:
+                    <strong id="results-count" class="text-purple-300">00</strong>
+                  </span>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <p class="text-sm text-slate-400 sm:max-w-2xl">
+                  As demandas são indicativas e refletem observações da comunidade. Valores podem mudar conforme atualizações e eventos sazonais.
+                </p>
+                <a
+                  href="mailto:contato@adoptmevalores.com?subject=Sugest%C3%A3o%20de%20valor"
+                  class="report-link"
+                >
+                  📢 Sugerir atualização de valor
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto w-full max-w-6xl px-4 py-16">
+        <div id="empty-state" class="hidden rounded-3xl border border-slate-800 bg-slate-900/60 p-10 text-center text-slate-300">
+          😢 Nenhum pet encontrado
+        </div>
+        <div id="pet-grid" class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3"></div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-900/90">
+      <div class="mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-8 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+        <span>© 2025 Adopt Me Valores. Todos os direitos reservados.</span>
+        <span>Dados baseados na comunidade - Não oficial.</span>
+      </div>
+    </footer>
+
+    <script type="module" src="./assets/js/value-list.js"></script>
+  </body>
+</html>

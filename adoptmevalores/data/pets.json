@@ -1,0 +1,531 @@
+{
+  "version": "1.1.0",
+  "lastUpdated": "2025-10-08T12:00:00Z",
+  "pets": [
+    {
+      "id": "shadow-dragon",
+      "names": {
+        "en": "Shadow Dragon",
+        "pt": "Dragão das Sombras"
+      },
+      "value": 270,
+      "rarity": "legendary",
+      "demand": "high",
+      "trend": "stable",
+      "emoji": "🐉",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Evento de Halloween 2019",
+        "currency": "Robux (1.000)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Shadow_Dragon",
+      "confidence": "media",
+      "tags": ["Evento", "Dragão", "Robux"]
+    },
+    {
+      "id": "bat-dragon",
+      "names": {
+        "en": "Bat Dragon",
+        "pt": "Dragão Morcego"
+      },
+      "value": 230,
+      "rarity": "legendary",
+      "demand": "high",
+      "trend": "rising",
+      "emoji": "🦇",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Evento de Halloween 2019",
+        "currency": "Doce (110.000) ou Robux"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Bat_Dragon",
+      "confidence": "media",
+      "tags": ["Evento", "Dragão", "Doces"]
+    },
+    {
+      "id": "giraffe",
+      "names": {
+        "en": "Giraffe",
+        "pt": "Girafa"
+      },
+      "value": 255,
+      "rarity": "legendary",
+      "demand": "high",
+      "trend": "stable",
+      "emoji": "🦒",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Ovo Safari (Gumball Machine)",
+        "currency": "Bucks (750)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Giraffe",
+      "confidence": "alta",
+      "tags": ["Ovo Safari", "Savanna"]
+    },
+    {
+      "id": "frost-dragon",
+      "names": {
+        "en": "Frost Dragon",
+        "pt": "Dragão de Gelo"
+      },
+      "value": 135,
+      "rarity": "legendary",
+      "demand": "high",
+      "trend": "rising",
+      "emoji": "❄️",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Evento de Natal 2019",
+        "currency": "Robux (1.000)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Frost_Dragon",
+      "confidence": "media",
+      "tags": ["Evento", "Dragão", "Natal"]
+    },
+    {
+      "id": "owl",
+      "names": {
+        "en": "Owl",
+        "pt": "Coruja"
+      },
+      "value": 90,
+      "rarity": "legendary",
+      "demand": "high",
+      "trend": "stable",
+      "emoji": "🦉",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Ovo da Fazenda (Gumball Machine)",
+        "currency": "Bucks (750)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Owl",
+      "confidence": "alta",
+      "tags": ["Ovo da Fazenda", "Noturno"]
+    },
+    {
+      "id": "parrot",
+      "names": {
+        "en": "Parrot",
+        "pt": "Papagaio"
+      },
+      "value": 85,
+      "rarity": "legendary",
+      "demand": "high",
+      "trend": "stable",
+      "emoji": "🦜",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Ovo da Selva (Gumball Machine)",
+        "currency": "Bucks (750)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Parrot",
+      "confidence": "alta",
+      "tags": ["Ovo da Selva", "Ave"]
+    },
+    {
+      "id": "evil-unicorn",
+      "names": {
+        "en": "Evil Unicorn",
+        "pt": "Unicórnio Maligno"
+      },
+      "value": 80,
+      "rarity": "legendary",
+      "demand": "high",
+      "trend": "stable",
+      "emoji": "🦄",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Evento de Halloween 2019",
+        "currency": "Doce (108.000)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Evil_Unicorn",
+      "confidence": "media",
+      "tags": ["Evento", "Cavalo", "Doces"]
+    },
+    {
+      "id": "crow",
+      "names": {
+        "en": "Crow",
+        "pt": "Corvo"
+      },
+      "value": 75,
+      "rarity": "legendary",
+      "demand": "high",
+      "trend": "stable",
+      "emoji": "🐦‍⬛",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Ovo da Fazenda (Gumball Machine)",
+        "currency": "Bucks (750)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Crow",
+      "confidence": "alta",
+      "tags": ["Ovo da Fazenda", "Ave"]
+    },
+    {
+      "id": "arctic-reindeer",
+      "names": {
+        "en": "Arctic Reindeer",
+        "pt": "Rena do Ártico"
+      },
+      "value": 50,
+      "rarity": "legendary",
+      "demand": "medium",
+      "trend": "stable",
+      "emoji": "🦌",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Evento de Natal 2019 (Christmas Egg)",
+        "currency": "Gingerbread (1.440)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Arctic_Reindeer",
+      "confidence": "media",
+      "tags": ["Evento", "Natal"]
+    },
+    {
+      "id": "turtle",
+      "names": {
+        "en": "Turtle",
+        "pt": "Tartaruga"
+      },
+      "value": 40,
+      "rarity": "legendary",
+      "demand": "medium",
+      "trend": "stable",
+      "emoji": "🐢",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Ovo Australiano (Gumball Machine)",
+        "currency": "Bucks (750)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Turtle",
+      "confidence": "alta",
+      "tags": ["Ovo Australiano", "Réptil"]
+    },
+    {
+      "id": "kangaroo",
+      "names": {
+        "en": "Kangaroo",
+        "pt": "Canguru"
+      },
+      "value": 38,
+      "rarity": "legendary",
+      "demand": "medium",
+      "trend": "stable",
+      "emoji": "🦘",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Ovo Australiano (Gumball Machine)",
+        "currency": "Bucks (750)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Kangaroo",
+      "confidence": "alta",
+      "tags": ["Ovo Australiano", "Marsupial"]
+    },
+    {
+      "id": "lion",
+      "names": {
+        "en": "Lion",
+        "pt": "Leão"
+      },
+      "value": 45,
+      "rarity": "legendary",
+      "demand": "medium",
+      "trend": "stable",
+      "emoji": "🦁",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Ovo Safari (Gumball Machine)",
+        "currency": "Bucks (750)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Lion",
+      "confidence": "alta",
+      "tags": ["Ovo Safari", "Felino"]
+    },
+    {
+      "id": "flamingo",
+      "names": {
+        "en": "Flamingo",
+        "pt": "Flamingo"
+      },
+      "value": 25,
+      "rarity": "ultra-rare",
+      "demand": "medium",
+      "trend": "stable",
+      "emoji": "🦩",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Ovo Safari (Gumball Machine)",
+        "currency": "Bucks (750)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Flamingo",
+      "confidence": "alta",
+      "tags": ["Ovo Safari", "Ave"]
+    },
+    {
+      "id": "dalmatian",
+      "names": {
+        "en": "Dalmatian",
+        "pt": "Dálmata"
+      },
+      "value": 20,
+      "rarity": "ultra-rare",
+      "demand": "medium",
+      "trend": "stable",
+      "emoji": "🐕",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Evento de Natal 2019 (Pet Shop)",
+        "currency": "Robux (250)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Dalmatian",
+      "confidence": "media",
+      "tags": ["Evento", "Cão", "Natal"]
+    },
+    {
+      "id": "cow",
+      "names": {
+        "en": "Cow",
+        "pt": "Vaca"
+      },
+      "value": 18,
+      "rarity": "rare",
+      "demand": "medium",
+      "trend": "rising",
+      "emoji": "🐄",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Ovo da Fazenda (Gumball Machine)",
+        "currency": "Bucks (750)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Cow",
+      "confidence": "alta",
+      "tags": ["Ovo da Fazenda", "Fazenda"]
+    },
+    {
+      "id": "elephant",
+      "names": {
+        "en": "Elephant",
+        "pt": "Elefante"
+      },
+      "value": 22,
+      "rarity": "rare",
+      "demand": "medium",
+      "trend": "stable",
+      "emoji": "🐘",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Ovo Safari (Gumball Machine)",
+        "currency": "Bucks (750)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Elephant",
+      "confidence": "alta",
+      "tags": ["Ovo Safari", "Savanna"]
+    },
+    {
+      "id": "pig",
+      "names": {
+        "en": "Pig",
+        "pt": "Porco"
+      },
+      "value": 15,
+      "rarity": "rare",
+      "demand": "medium",
+      "trend": "stable",
+      "emoji": "🐷",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Ovo da Fazenda (Gumball Machine)",
+        "currency": "Bucks (750)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Pig",
+      "confidence": "alta",
+      "tags": ["Ovo da Fazenda", "Fazenda"]
+    },
+    {
+      "id": "llama",
+      "names": {
+        "en": "Llama",
+        "pt": "Lhama"
+      },
+      "value": 12,
+      "rarity": "uncommon",
+      "demand": "low",
+      "trend": "stable",
+      "emoji": "🦙",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Ovo da Fazenda (Gumball Machine)",
+        "currency": "Bucks (750)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Llama",
+      "confidence": "alta",
+      "tags": ["Ovo da Fazenda", "Fazenda"]
+    },
+    {
+      "id": "chicken",
+      "names": {
+        "en": "Chicken",
+        "pt": "Galinha"
+      },
+      "value": 10,
+      "rarity": "rare",
+      "demand": "low",
+      "trend": "stable",
+      "emoji": "🐔",
+      "category": "pet",
+      "availability": {
+        "status": "limitado",
+        "obtainedFrom": "Ovo da Fazenda (Gumball Machine)",
+        "currency": "Bucks (750)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Chicken",
+      "confidence": "alta",
+      "tags": ["Ovo da Fazenda", "Fazenda"]
+    },
+    {
+      "id": "unicorn",
+      "names": {
+        "en": "Unicorn",
+        "pt": "Unicórnio"
+      },
+      "value": 8,
+      "rarity": "legendary",
+      "demand": "low",
+      "trend": "falling",
+      "emoji": "🦄",
+      "category": "pet",
+      "availability": {
+        "status": "permanente",
+        "obtainedFrom": "Ovos Cracked, Pet e Royal",
+        "currency": "Bucks"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Unicorn",
+      "confidence": "alta",
+      "tags": ["Padrão", "Unicórnio"]
+    },
+    {
+      "id": "dragon",
+      "names": {
+        "en": "Dragon",
+        "pt": "Dragão"
+      },
+      "value": 7,
+      "rarity": "legendary",
+      "demand": "low",
+      "trend": "falling",
+      "emoji": "🐉",
+      "category": "pet",
+      "availability": {
+        "status": "permanente",
+        "obtainedFrom": "Ovos Cracked, Pet e Royal",
+        "currency": "Bucks"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Dragon",
+      "confidence": "alta",
+      "tags": ["Padrão", "Dragão"]
+    },
+    {
+      "id": "kitsune",
+      "names": {
+        "en": "Kitsune",
+        "pt": "Kitsune"
+      },
+      "value": 6,
+      "rarity": "legendary",
+      "demand": "low",
+      "trend": "stable",
+      "emoji": "🦊",
+      "category": "pet",
+      "availability": {
+        "status": "permanente",
+        "obtainedFrom": "Pet Shop premium",
+        "currency": "Robux (600)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Kitsune",
+      "confidence": "alta",
+      "tags": ["Premium", "Robux"]
+    },
+    {
+      "id": "robo-dog",
+      "names": {
+        "en": "Robo Dog",
+        "pt": "Cachorro Robô"
+      },
+      "value": 5,
+      "rarity": "legendary",
+      "demand": "low",
+      "trend": "stable",
+      "emoji": "🤖",
+      "category": "pet",
+      "availability": {
+        "status": "permanente",
+        "obtainedFrom": "Pet Shop premium",
+        "currency": "Robux (600)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Robo_Dog",
+      "confidence": "alta",
+      "tags": ["Premium", "Robux"]
+    },
+    {
+      "id": "king-bee",
+      "names": {
+        "en": "King Bee",
+        "pt": "Abelha Rei"
+      },
+      "value": 4,
+      "rarity": "legendary",
+      "demand": "low",
+      "trend": "falling",
+      "emoji": "🐝",
+      "category": "pet",
+      "availability": {
+        "status": "permanente",
+        "obtainedFrom": "Café VIP (Pote de Mel Real)",
+        "currency": "Robux (199)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/King_Bee",
+      "confidence": "alta",
+      "tags": ["Premium", "Abelha"]
+    },
+    {
+      "id": "cerberus",
+      "names": {
+        "en": "Cerberus",
+        "pt": "Cérbero"
+      },
+      "value": 3,
+      "rarity": "legendary",
+      "demand": "low",
+      "trend": "stable",
+      "emoji": "🐕‍🦺",
+      "category": "pet",
+      "availability": {
+        "status": "permanente",
+        "obtainedFrom": "Pet Shop premium",
+        "currency": "Robux (500)"
+      },
+      "source": "https://adoptme.fandom.com/wiki/Cerberus",
+      "confidence": "alta",
+      "tags": ["Premium", "Mitologia"]
+    }
+  ]
+}
